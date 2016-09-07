@@ -8,8 +8,9 @@ export default class Home extends Component {
     return (
       <div>
         <div className={styles.container}>
-          <h2>Home</h2>
-          <Link to="/counter">to Counter</Link>
+          <p>
+            bet <i>$5</i> I won't <a href="https://vine.co/v/O0OiUYJEmbd" title="Video">destory a 7-11 chips rack</a><span>|</span>
+          </p>
         </div>
       </div>
     );

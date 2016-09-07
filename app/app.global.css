@@ -5,19 +5,19 @@ body {
   background-color: #232C39;
   background-image: linear-gradient(45deg, rgba(0, 216, 255, .5) 10%, rgba(0, 1, 127, .7));
   font-family: Arial, Helvetica, Helvetica Neue;
-  overflow-y: hidden;
 }
 
 h2 {
   margin: 0;
-  font-size: 2.25rem;
-  font-weight: bold;
-  letter-spacing: -.025em;
+  font-size: 4rem;
+  font-weight: 100;
   color: #fff;
+  display: inline-block;
 }
 
 p {
   font-size: 24px;
+  display: inline-block;
 }
 
 li {
@@ -34,4 +34,46 @@ a:hover {
   opacity: 1;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Home */
+
+p {
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+p a {
+  text-decoration: none;
+}
+
+span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from { width: 0; }
+}
+
+@keyframes type2 {
+  0% {width: 0;}
+  50% {width: 0;}
+  100% { width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
 }
